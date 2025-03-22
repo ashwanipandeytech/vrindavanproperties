@@ -60,6 +60,28 @@
 .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active {
     color: var(--primary-color) !important;
 }
+
+.bg-beige-radial-gradient {
+    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%);
+}
+
+footer {
+    color: #c6c5c5;
+}
+footer .text-muted {
+    color: #797878 !important;
+}
+footer a {
+    display: inline-block;
+    padding-block: 4px;
+    text-decoration: none;
+    color: #c6c5c5;
+    transition: color .3s ease-in-out;
+}
+footer ul li a:hover {
+    color: var(--primary-color);
+}
+
 @media screen and (min-width: 576px) {
     header.home-page {
         min-height: 100vh;
@@ -94,24 +116,9 @@
         background-color: #f0eeee;
     }
 }
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1420px;
+    }
 
-.bg-beige-radial-gradient {
-    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%);
-}
-
-footer {
-    color: #c6c5c5;
-}
-footer .text-muted {
-    color: #797878 !important;
-}
-footer a {
-    display: inline-block;
-    padding-block: 4px;
-    text-decoration: none;
-    color: #c6c5c5;
-    transition: color .3s ease-in-out;
-}
-footer ul li a:hover {
-    color: var(--primary-color);
 }
