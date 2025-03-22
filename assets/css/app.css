@@ -2,6 +2,16 @@
     --primary-color: #ff6032;
     --primary-dark-color: #e3552e;
 }
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/InterRegular.woff2);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    font-family: 'Inter';
+}
 
 .text-primary {
     color: var(--primary-color) !important;
