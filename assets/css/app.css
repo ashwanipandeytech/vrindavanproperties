@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #ff6032;
+    --primary-dark-color: #e3552e;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark-color);
+    border-color: var(--primary-dark-color);
+}
+
+
+.scroll {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent)
+}
+
+.scroll .scroll-item {
+    animation: scroll var(--time) linear infinite;
+}
+.scroll .card {
+    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%) rgba(0, 0, 0, 0);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.navbar { 
+    z-index: 999;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    padding-inline: 16px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--primary-color) !important;
+}
+@media screen and (min-width: 576px) {
+    header.home-page {
+        min-height: 100vh;
+    }
+    header:not(.home-page) .content-container {
+       padding-top: 12%;
+       padding-bottom: 4%;
+    }
+    .home-page .content-container {
+        padding-top: 7%;
+    }
+    .navbar .navbar-nav .nav-item .nav-link { 
+        font-weight: 600;
+    }
+    header.home-page .navbar .navbar-brand {
+        color: #fff;
+    } 
+    header.home-page .navbar .navbar-nav .nav-item .nav-link { 
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 575.99px) {
+    .home-page .content-container {
+        padding-top: 20%;
+    }
+    header:not(.home-page) .content-container {
+        padding-top: 30%;
+        padding-bottom: 3%;
+     }
+    .navbar .offcanvas-body { 
+        background-color: #f0eeee;
+    }
+}
+
+.bg-beige-radial-gradient {
+    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%);
+}
+
+footer {
+    color: #c6c5c5;
+}
+footer .text-muted {
+    color: #797878 !important;
+}
+footer a {
+    display: inline-block;
+    padding-block: 4px;
+    text-decoration: none;
+    color: #c6c5c5;
+    transition: color .3s ease-in-out;
+}
+footer ul li a:hover {
+    color: var(--primary-color);
+}
