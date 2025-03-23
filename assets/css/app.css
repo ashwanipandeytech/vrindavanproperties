@@ -10,7 +10,8 @@
     font-weight: 400;
 }
 body {
-    font-family: "Inter", sans-serif;;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
 }
 
 .text-primary {
@@ -103,9 +104,9 @@ footer ul li a:hover {
     .home-page .content-container {
         padding-top: 7%;
     }
-    .navbar .navbar-nav .nav-item .nav-link { 
+    /* .navbar .navbar-nav .nav-item .nav-link { 
         font-weight: 600;
-    }
+    } */
     header.home-page .navbar .navbar-brand {
         color: #fff;
     } 

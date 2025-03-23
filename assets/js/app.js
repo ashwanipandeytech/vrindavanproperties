@@ -12,7 +12,7 @@ counters.forEach( counter => {
       const time = value / speed;
      if(data < value) {
           counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 50);
+          setTimeout(animate, 20);
         }else{
           counter.innerText = value;
         }
