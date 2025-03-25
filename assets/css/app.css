@@ -16,6 +16,7 @@
     font-style: normal;
     font-weight: 700;
 }
+
 body {
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -45,8 +46,6 @@ body {
     transform: scale(1.05);
 }
 
-
-
 .scroll {
     position: relative;
     display: flex;
@@ -54,14 +53,12 @@ body {
     overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent)
 }
-
 .scroll .scroll-item {
     animation: scroll var(--time) linear infinite;
 }
 .scroll .card {
     background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%) rgba(0, 0, 0, 0);
 }
-
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -81,9 +78,20 @@ body {
     }
 }
 
-
 .navbar { 
     z-index: 999;
+    transition: all .3s ease-in-out;
+}
+.navbar.navbar-sticky {
+    position: sticky !important;
+    top: 10px;
+    margin-inline: 40px;
+    border-radius: 30px;
+    background-color: #fff;
+    padding-block: 0 !important;
+}
+.navbar.navbar-sticky * {
+    color: #383838 !important;
 }
 header.home-page .navbar .navbar-brand {
     color: #fff;
@@ -120,6 +128,9 @@ footer ul li a:hover {
 }
 
 @media screen and (min-width: 576px) {
+    .body-padding-top {
+        padding-top: 72px;
+    }
     header.home-page {
         min-height: 100vh;
     }
@@ -130,9 +141,6 @@ footer ul li a:hover {
     .home-page .content-container {
         padding-top: 7%;
     }
-    /* .navbar .navbar-nav .nav-item .nav-link { 
-        font-weight: 600;
-    } */
     header .navbar {
        padding-block: 20px;
     }
@@ -141,6 +149,10 @@ footer ul li a:hover {
     }
     .display-1 {
         font-size: 80px;
+    }
+    .news-letter img {
+        height: 110%;
+        top:-10%;
     }
     .footer-padding {
         padding: 40px !important;
