@@ -21,6 +21,9 @@ body {
     font-size: 15px;
 }
 
+.bg-beige-radial-gradient {
+    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%);
+}
 .text-primary {
     color: var(--primary-color) !important;
 }
@@ -32,6 +35,16 @@ body {
     background-color: var(--primary-dark-color);
     border-color: var(--primary-dark-color);
 }
+.card {
+    overflow: hidden;
+}
+.card img{
+    transition: transform .3s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+
 
 
 .scroll {
@@ -80,10 +93,6 @@ header.home-page .navbar .navbar-brand {
 }
 .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active {
     color: var(--primary-color) !important;
-}
-
-.bg-beige-radial-gradient {
-    background: radial-gradient(74.3056% 169.622% at 14.6875% 50.1873%, rgb(255, 239, 234) 0%, rgb(245, 245, 245) 100%);
 }
 
 footer {
@@ -137,7 +146,6 @@ footer ul li a:hover {
         padding: 40px !important;
     }
 } 
-
 @media screen and (max-width: 575.99px) {
     .home-page .content-container {
         padding-top: 20%;
@@ -152,7 +160,7 @@ footer ul li a:hover {
 }
 @media (min-width: 1200px) {
     .container {
-        max-width: 1420px;
+        max-width: 1500px;
         padding-inline: 40px;
     }
 
