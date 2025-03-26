@@ -136,12 +136,14 @@ footer ul li a:hover {
     .navbar.navbar-sticky {
         position: fixed !important;
         top: 10px;
+        left: 0;
+        right: 0;
+        z-index: 1042;
         padding-block: 8px !important;
         margin-inline: 40px;
         border-radius: 30px;
         background-color: #fff;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-        z-index: 9999;
     }
     header.home-page .navbar .navbar-nav .nav-item .nav-link { 
         color: #fff;
