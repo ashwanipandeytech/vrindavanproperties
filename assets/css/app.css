@@ -82,16 +82,6 @@ body {
     z-index: 999;
     transition: all .3s ease-in-out;
 }
-.navbar.navbar-sticky {
-    position: fixed !important;
-    top: 10px;
-    padding-block: 0 !important;
-    margin-inline: 40px;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    z-index: 9999;
-}
 .navbar.navbar-sticky * {
     color: #383838 !important;
 }
@@ -111,7 +101,7 @@ footer {
 footer .text-muted {
     color: #797878 !important;
 }
-footer .border-end, footer .border-bottom {
+footer .border-end, .footer-band-logo.border-top {
     border-color: #383838 !important;
 }
 footer a {
@@ -137,20 +127,34 @@ footer ul li a:hover {
         min-height: 100vh;
     }
     header:not(.home-page) .content-container {
-       padding-top: 10%;
-       padding-bottom: 2%;
+       padding-top: 8.5%;
+       padding-bottom: 3.5%;
     }
     .home-page .content-container {
         padding-top: 7%;
     }
-    header .navbar {
-       padding-block: 20px;
+    .navbar.navbar-sticky {
+        position: fixed !important;
+        top: 10px;
+        padding-block: 8px !important;
+        margin-inline: 40px;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
     }
     header.home-page .navbar .navbar-nav .nav-item .nav-link { 
         color: #fff;
     }
+    .hero-left-content h6 {
+        margin-bottom: -8px;
+    }
     .display-1 {
         font-size: 80px;
+    }
+    .display-5 {
+        font-size: 42px;
+        margin-bottom: 0;
     }
     .news-letter img {
         height: 110%;
@@ -171,11 +175,20 @@ footer ul li a:hover {
     .navbar .offcanvas-body { 
         background-color: #f0eeee;
     }
+    header .navbar {
+        position: sticky !important;
+        background-color: #e8e0e0;
+        top: 0;
+        padding-block: 8px;
+    }
+    header .navbar .navbar-brand  {
+        color: #383838 !important;
+    }
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1500px;
-        padding-inline: 40px;
+        padding-inline: 30px;
     }
 
 }
